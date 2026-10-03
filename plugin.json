@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "questionpunk",
+  "version": "1.1.1",
+  "description": "Create and review survey drafts, publish requested studies, and analyze QuestionPunk results.",
+  "author": {
+    "name": "QuestionPunk"
+  },
+  "homepage": "https://app.questionpunk.com",
+  "keywords": [
+    "research",
+    "surveys",
+    "customer-feedback"
+  ]
+}
