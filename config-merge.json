@@ -1,0 +1,11 @@
+{
+  "mcp_servers": {
+    "questionpunk": {
+      "url": "https://app.questionpunk.com/api/v1",
+      "auth": "oauth",
+      "oauth": {
+        "scope": "read write responses:read"
+      }
+    }
+  }
+}
