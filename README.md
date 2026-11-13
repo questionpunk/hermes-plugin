@@ -1,6 +1,6 @@
 # QuestionPunk for Hermes Agent
 
-Install the public package, inspect it, and enable its four research skills:
+Install the public package, inspect it, and enable its research skills:
 
 ```sh
 hermes plugins install questionpunk/hermes-plugin --no-enable
@@ -9,6 +9,8 @@ hermes plugins enable questionpunk
 ```
 
 Merge the supplied `config-merge.json` into your profile's `config.yaml` with its normal configuration controls. Preserve existing settings. The JSON object is also valid YAML; do not replace the whole config file. It defines `mcp_servers.questionpunk` with the canonical HTTPS endpoint, OAuth, and `read write responses:read` scopes. The explicit profile entry takes precedence over the portable package's server of the same name. This is deliberate: Hermes' portable MCP adapter does not carry the native `auth: oauth` option.
+
+The package's `mcp.json` also declares `questionpunk-start` (`https://mcp.questionpunk.com/start`). It needs no sign-in and has one tool, `survey_draft_link`, which turns a survey the assistant drafted into a link that opens it in QuestionPunk as a guest draft. It saves and reads nothing, so the skills can hand over a draft before the user signs in.
 
 ```sh
 hermes mcp login questionpunk
